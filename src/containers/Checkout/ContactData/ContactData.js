@@ -14,7 +14,7 @@ class ContactData extends Component {
         elementConfig: {
           type: "text",
           placeholder: "Your Name",
-          autocomplete: "nope",
+          autoComplete: "nope",
         },
         value: "",
         validation: {
@@ -28,7 +28,7 @@ class ContactData extends Component {
         elementConfig: {
           type: "text",
           placeholder: "Street",
-          autocomplete: "nope",
+          autoComplete: "nope",
         },
         value: "",
         validation: {
@@ -43,7 +43,7 @@ class ContactData extends Component {
         elementConfig: {
           type: "text",
           placeholder: "ZIP Code",
-          autocomplete: "nope",
+          autoComplete: "nope",
         },
         value: "",
         validation: {
@@ -60,7 +60,7 @@ class ContactData extends Component {
         elementConfig: {
           type: "text",
           placeholder: "Country",
-          autocomplete: "nope",
+          autoComplete: "nope",
         },
         value: "",
         validation: {
@@ -74,8 +74,8 @@ class ContactData extends Component {
         elementType: "input",
         elementConfig: {
           type: "email",
-          placeholder: "Your Mail",
-          autocomplete: "nope",
+          placeholder: "Email",
+          autoComplete: "nope",
         },
         value: "",
         validation: {
@@ -183,6 +183,7 @@ class ContactData extends Component {
             elementType={formElement.config.elementType}
             elementConfig={formElement.config.elementConfig}
             value={formElement.config.value}
+            valueType={formElement.id}
             invalid={!formElement.config.valid}
             shouldValidate={formElement.config.validation}
             touched={formElement.config.touched}
